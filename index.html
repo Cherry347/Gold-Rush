@@ -1,39 +1,18 @@
 <!DOCTYPE html>
-    <html ng-app="firstApp">
-        <head>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css" type="text/css" />
-            <link rel="stylesheet" href="main.css" type="text/css" />
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.4/angular.js"></script>
-            <body ng-controller= "controller1">
-                <div class= "container">
-                    <h1>Mr. Klaws!</h1>
-                    <button class= "kittyPic" ng-click="popUp()"></button>
-                    <div class="annoyingBox" ng-class="{'show' : noPop}">
-                        <div class="annoying" ng-class="{'show' : noPop}"><h3>More about kitty kitty paws</h3> Puma birman tabby
-                        Cougar russian blue, grimalkin so kitty. Havana brown maine coon and cougar and egyptian mau bengal so manx yet egyptian mau. Panther                                 russian blue yet russian blue. Turkish angora maine coon for savannah, or cornish rex. Lion american bobtail for savannah cornish rex
-                        for persian but kitty. Ragdoll singapura yet turkish angora for munchkin and balinese but kitty. Ocelot. Bengal cheetah balinese and bobcat
-                        american bobtail. Maine coon british shorthair yet balinese ocelot, savannah munchkin. Ragdoll persian puma. Mouser jaguar ocelot malkin.
-                        Grimalkin kitty or manx, yet donskoy or havana brown. Puma. Himalayan egyptian mau donskoy. Munchkin sphynx sphynx savannah for puma. Kitty
-                        birman. Tomcat persian but birman and maine coon devonshire rex persian cornish rex.
-                        </div>
-                        <button ng-click="popUp()" class="moveBut">Close</button>
-                    </div>
-                    <div ng-mouseover="pinkpara()">
-                        <p ng-class="{'pinktxt' : pinkyPie}">Meow for food, then when human fills food dish, take a few bites of food and continue meowing meow all night having their mate disturbing sleeping humans yet white cat sleeps on a black shirt plan steps for world domination meowzer! get video posted to internet for chasing red dot. Chase dog then run away sit on the laptop so damn that dog . When in doubt, wash destroy couch, or poop in the plant pot meowwww and knock over christmas tree. Run outside as soon as door open hide from vacuum cleaner. Leave dead animals as gifts. Favor packaging over toy thug cat hack up furballs thug cat , for white cat sleeps on a black shirt stare out the window. Eat the fat cats food. Use lap as chair howl uncontrollably for no reason for mew, tuxedo cats always looking dapper. Lick plastic bags poop in litter box, scratch the walls lie on your belly and purr when you are asleep hate dog, human give me attention meow. Chase the pig around the house make muffins why must they do that, but behind the couch pelt around the house and up and down stairs chasing phantoms. Cat slap dog in face russian blue yet play riveting piece on synthesizer keyboard. Lick the plastic bag unwrap toilet paper sweet beast, or cat slap dog in face or human is washing you why halp oh the horror flee scratch hiss bite or eat grass, throw it back up eat the fat cats food. Walk on car leaving trail of paw prints on hood and windshield pelt around the house and up and down stairs chasing phantoms yet lick arm hair if it smells like fish eat as much as you wish. Swat at dog eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap. Fall over dead (not really but gets sypathy) intently stare at the same spot, but i like big cats and i can not lie so find something else more interesting brown cats with pink ears behind the couch, for meow all night having their mate disturbing sleeping humans. Sniff other cat's butt and hang jaw half open thereafter see owner, run in terror stand in front of the computer screen my left donut is missing, as is my right sit in box destroy couch flee in terror at cucumber discovered on floor. Paw at your fat belly mark territory, yet put butt in owner's face.
-                        </p>
-                    </div>
-                    <h1> Reasons to Love Him!...</h1>
-                    <button ng-click="list()">Why?</button>
-                        <ul ng-class="{'show' : listGone}">
-                            <li>So Cute!</li>
-                            <li>Smells like fresh laundry</li>
-                            <li>Soft as a Bunny</li>
-                        </ul>
-                    <button ng-click= "button()" >Meow!</button>
-                        <h1 ng-class= "{'show' : showMe}">I can haz complementary
-                        <a ng-click= "askUser()" href= "http://www.petco.com/shop/en/petcostore">toyz                            </a>!?
-                        </h1>
-                </div>
-                <script type="text/javascript" src="index.js"></script>
-            </body>
-    </html>
+<html ng-app='gold'>
+    <head>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.4/angular.js"></script>
+    </head>
+    <body ng-controller="eureka">
+        <div class="container"  ng-click='drop()'>
+            <img src="https://github.com/RefactorU/exercise-starters/blob/master/client-js/gold-rush/topo-co.jpg?raw=true">
+        </div>
+        <div ng-repeat = "pin in pins" ng-click='removePin()'>
+            <div class='pin' style="top:{{pin.y-8}}px; left: {{pin.x-5}}px;"></div>
+        </div>
+
+        <!--   scripts   -->
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

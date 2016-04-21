@@ -1,55 +1,18 @@
-body {
-    text-align: center;
-    background-color: papayawhip;
-}
-.kittyPic {
-    background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuLRpqLfBAhvexaq-sJlXBSk_Qru_05gcaPor-SW53X-o8bECMqw");
-    height: 235px;
-    width: 230px;
-}
-.annoyingBox {
-    border-radius: 5px;
-    background-color: #8ee5ee;
-    height: 30em;
-    width: 50em;
-    margin-left:15em;
-    position: fixed;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html ng-app='gold'>
+    <head>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.4/angular.js"></script>
+    </head>
+    <body ng-controller="eureka">
+        <div class="container"  ng-click='drop()'>
+            <img src="https://github.com/RefactorU/exercise-starters/blob/master/client-js/gold-rush/topo-co.jpg?raw=true">
+        </div>
+        <div ng-repeat = "pin in pins" ng-click='removePin()'>
+            <div class='pin' style="top:{{pin.y-8}}px; left: {{pin.x-5}}px;"></div>
+        </div>
 
-.annoying {
-    font-size: 1em;
-    line-height: 20px;
-    text-align: center;
-    position: relative;
-    top: 40%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding-left: 2em;
-    padding-right: 2em;
-}
-.show {
-    visibility: hidden;
-}
-.moveBut {
-    position:absolute;
-    top:80%;
-    left:47%;
-}
-li {
-    margin-top: .7em;
-    list-style-type: none;
-    text-align: inherit;
-}
-a {
-    text-decoration: none;
-    color: red;
-}
-.pinktxt {
-    color: #FFB6C1;
-}
-button {
-     background-color: #e0ffff;
-     border-radius: 5px;
-}
+        <!--   scripts   -->
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
